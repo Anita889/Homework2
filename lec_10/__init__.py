@@ -1,4 +1,4 @@
-from vehicle import Vehicle
+from lec_10.vehicle import Vehicle
 
 class Car(Vehicle):
     def __init__(self):
@@ -16,6 +16,3 @@ class RaceCar(Car):
     def __init__(self):
         super().__init__()
 
-        class Vehicle:
-    def __init__(self):
-        pass
