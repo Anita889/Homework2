@@ -4,7 +4,8 @@ def matrix_product(matrix1, matrix2):
 
     if cols1 != rows2:
         raise ValueError(
-            "Invalid matrices for multiplication: Number of columns in the first matrix must be equal to the number of rows in the second matrix.")
+            "Invalid matrices for multiplication: Number of columns in the first matrix must be equal to the number "
+            "of rows in the second matrix.")
 
     result_matrix = [[0 for _ in range(cols2)] for _ in range(rows1)]
 

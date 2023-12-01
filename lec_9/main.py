@@ -1,5 +1,6 @@
 import random
 
+
 class Matrix:
     def __init__(self, rows, cols):
         self.rows = rows
@@ -25,10 +26,12 @@ class Matrix:
 
     def __mul__(self, other):
         if self.cols != other.rows:
-            raise ValueError("Number of columns in the first matrix must match the number of rows in the second matrix for multiplication.")
+            raise ValueError(
+                "Number of columns in the first matrix must match the number of rows in the second matrix for multiplication.")
 
         result = [[sum(a * b for a, b in zip(row, col)) for col in zip(*other.values)] for row in self.values]
         return Matrix(self.rows, other.cols, result)
+
 
 if __name__ == "__main__":
     matrix1 = Matrix(2, 2)
